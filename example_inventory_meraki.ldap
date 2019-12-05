@@ -1,0 +1,3 @@
+---
+plugin: meraki_inventory
+api_key: 'enter-your-api-key-here'
