@@ -1,3 +1,13 @@
 ---
-plugin: meraki_inventory
-api_key: 'enter-your-api-key-here'
+- hosts: localhost
+  gather_facts: no
+  vars:
+    myapikey : "NOT A REAL API KEY" 
+    meraki_inventory: "{{ lookup('meraki_inventory',api_key=myapikey, wantlist=True )}}"
+    
+  tasks:
+    - name: Show The meraki data
+      debug:
+        msg:
+          - "{{ meraki_inventory[0].name }}"
+          - "{{ meraki_inventory[0].serial }}"
