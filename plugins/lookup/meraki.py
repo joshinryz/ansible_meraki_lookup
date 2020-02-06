@@ -4,13 +4,13 @@ from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
 
 DOCUMENTATION = '''
-     name: meraki_inventory
+     name: meraki
      author: Joshua Robinett (@jshinryz)
      plugin_type: lookup
-     short_description: Meraki Inventory Source
+     short_description: Meraki Lookup Plugin
      description:
         - Lookup plugin to provide a data on meraki environment.
-        - Recursively get inventory from Meraki using an API Key.
+        - Recursively get devices from Meraki using an API Key.
      options:
          api_key:
              description:
@@ -37,7 +37,7 @@ EXAMPLES = '''
       myproperties :
         - name
         - serial
-      meraki_inventory: "{{ lookup('meraki_inventory',api_key=myapikey, org_id='12312312312', properties=myproperties, wantlist=True )}}"
+      meraki_inventory: "{{ lookup('meraki',api_key=myapikey, org_id='12312312312', properties=myproperties, wantlist=True )}}"
     
     tasks:
     
