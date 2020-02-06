@@ -9,7 +9,7 @@ The lookup plugin works with python2 and python3.
 
 
 ### Configuration
-Place the file `meraki_inventory.py` into your base folder under `.\plugins\lookup\`
+Place the file `meraki.py` into your base folder under `.\plugins\lookup\`
 Configure you ansible.cfg with the Lookup plugin path.
 
 
