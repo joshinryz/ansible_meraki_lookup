@@ -22,7 +22,7 @@ vars:
   myproperties :
     - name
     - serial
-  meraki_inventory: "{{ lookup('meraki_inventory',api_key=myapikey, org_id='12312312312', properties=myproperties, wantlist=True )}}"
+  meraki_inventory: "{{ lookup('meraki',api_key=myapikey, org_id='12312312312', properties=myproperties, wantlist=True )}}"
 tasks:
   - name: Show The meraki data
     debug:
