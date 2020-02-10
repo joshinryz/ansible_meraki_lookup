@@ -30,7 +30,7 @@ tasks:
 ```
 **api_key** - API Key. Please vault this value.
 
-**org_id** - This is yoru ORG ID in the Meraki portal used for API queries.
+**org_id** - This is your ORG ID in the Meraki portal used for API queries.
 
 **properties** - These are the properties that will be returned. This is not required and is a filter. Not including will return all properties.
 
